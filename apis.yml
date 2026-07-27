@@ -1,7 +1,27 @@
 aid: fy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fy.png
 name: Fy
-description: Fy is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Fy! (iamfy.co) is an online marketplace for wall art and home decor, curating
+  canvas prints, framed prints, gallery wall sets, and handmade UK-manufactured
+  frames from a community of independent artists. The storefront runs on Shopify
+  and offers an AI-powered "Advisor" tool for personalized wall-design
+  recommendations, an art-for-business program, and an artists hub for creators.
+  Fy was surfaced as a portfolio company of 500 Global and added to the API
+  Evangelist network. It publishes no first-party developer API; the only
+  machine-readable surface reachable on the domain is the Shopify Customer
+  Account OIDC/OAuth discovery served by the platform.
 url: https://raw.githubusercontent.com/api-evangelist/fy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Marketplace
+- E-Commerce
+- Retail
+- Wall Art
+- Home Decor
+- Consumer
+- Shopify
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,20 @@ maintainers:
 common:
 - type: Website
   url: https://iamfy.co
+- type: HelpCenter
+  url: https://iamfy.freshdesk.com/en/support/home
+- type: Blog
+  url: https://www.iamfy.co/blogs/inspiration
+- type: TermsOfService
+  url: https://www.iamfy.co/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.iamfy.co/policies/privacy-policy
+- type: WellKnown
+  url: well-known/fy-well-known.yml
+- type: DomainSecurity
+  url: security/fy-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

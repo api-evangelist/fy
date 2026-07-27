@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of /.well-known/ on iamfy.co
+host: https://www.iamfy.co
+note: >-
+  iamfy.co runs on Shopify; the OIDC/OAuth discovery documents are served by
+  Shopify's Customer Account API for the storefront (issuer
+  https://shopify.com/authentication/96666026315). They are genuinely reachable
+  on Fy's domain but describe the Shopify platform auth surface, not a
+  first-party Fy API.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: fy-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: fy-oauth-authorization-server.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
