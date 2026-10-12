@@ -1,0 +1,31 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/fy/integrations
+- https://n8n.io/integrations/fy/
+- https://composio.dev/toolkits/fy
+- https://monid.ai/tools/fy
+checked:
+- https://composio.dev/toolkits/fy
+- https://monid.ai/tools/fy
+- https://n8n.io/integrations/fy/
+- https://zapier.com/apps/fy/integrations
+summary: null
+marketplace_apps: []
+edges:
+- partner_name: worldpay
+  partner: worldpay
+  partner_match: domain
+  type: contract
+  channel: partner-built
+  relationship: banking-partner
+  direction: partner-built
+  evidence: https://github.com/api-evangelist/worldpay/blob/main/openapi/worldpay-apmpayments-api-openapi.yml
+  contract_reference:
+    repo: worldpay
+    spec_file: worldpay-apmpayments-api-openapi.yml
+    value: fy
+    property: OpenBankingPaymentInstrumentV2.language
+    detected_by: detect-payment-method-edges.py
+    detected: '2026-10-12'
+templates: []
